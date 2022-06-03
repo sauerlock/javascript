@@ -10,3 +10,16 @@ console.log(result)
 function multiplyList(array, multiplier){
   return array.map(x => x * 3)
 }
+
+//Another function with the same result
+
+function multiplyList(array, multiplier){
+  for(i=0; i < array.length; i++){
+       array[i] = array[i] * multiplier;
+  }
+return array;
+}
+
+let multiplicaArray = [1 ,2 ,3 ,4 ,5]
+result = multiplyList(multiplicaArray, 3);
+console.log(result)
